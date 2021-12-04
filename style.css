@@ -113,6 +113,30 @@ section a {
   margin: 0 auto;
 }
 
+.box-text {
+  max-width: 500px;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 0;
+}
+
+.box-text .btn {
+  margin-top: 20px;
+}
+
+/* Grid Styles */
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-reversed :first-child {
+  order: 2;
+}
+
 /* Buttons */
 .btn {
   cursor: pointer;
@@ -121,6 +145,7 @@ section a {
   border: 1px #000 solid;
   border-radius: 50px;
   padding: 7px 16px;
+  text-decoration: none;
 }
 
 .btn-dark-outline {
@@ -128,7 +153,8 @@ section a {
   color: #000;
 }
 
-.btn-dark-outline:hover {
+.btn-dark-outline:hover,
+.btn-light-outline:hover {
 background-color: rgba(0, 0, 0, 0.06);
 }
 .btn-light-outline {

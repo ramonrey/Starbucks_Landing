@@ -175,6 +175,11 @@ padding: 0 30px 30px;
   order: 2;
 }
 
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+}
+
 /* Buttons */
 .btn {
   cursor: pointer;
